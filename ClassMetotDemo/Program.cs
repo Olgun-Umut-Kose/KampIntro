@@ -10,7 +10,7 @@ namespace ClassMetotDemo
             bool exit = false;
             BankAccount account;
             CustomerManager customerManager = new CustomerManager();
-            while (!exit)
+            while (! exit)
             {
                 Console.WriteLine("İşlem seçiniz 1: müşteri ekle, 2:hesap ekle, 3:listele, 4:kredi al, 5:hesap sil, 6:müşteri sil, 0: çıkış");
 
