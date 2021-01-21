@@ -18,11 +18,11 @@ namespace GenericIntro
 
         public void Add(TKey key, TVal val)
         {
-            _keys.ForEach(k =>
+            _keys.ForEach(k => // foreach in başka bir kullanımı
             {
                 if (k.Equals(key))
                 {
-                    throw new ArgumentException();
+                    throw new ArgumentException(); // hata fırlatma bilmeyenler önemsemesin
                 }
             });
 
