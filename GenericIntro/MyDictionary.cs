@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
+
 namespace GenericIntro
 {
     class MyDictionary<TKey,TVal>
@@ -17,6 +18,14 @@ namespace GenericIntro
 
         public void Add(TKey key, TVal val)
         {
+            _keys.ForEach(k =>
+            {
+                if (k.Equals(key))
+                {
+                    throw new ArgumentException();
+                }
+            });
+
             _keys.Add(key);
             _vals.Add(val);
         }
