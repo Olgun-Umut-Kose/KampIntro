@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace GenericIntro
 {
@@ -8,13 +9,15 @@ namespace GenericIntro
         {
             //MyList();
 
+            
+
             MyDictionary<string, int> dictionary = new MyDictionary<string, int>();
             dictionary.Add("Anahtar1", 10);
             dictionary.Add("Anahtar2", 30);
-            Console.WriteLine(dictionary.GetValue("Anahtar1"));
-            Console.WriteLine(dictionary.GetValue("Anahtar2"));
-            Console.WriteLine(dictionary.GetKey(10));
-            Console.WriteLine(dictionary.GetKey(30));
+            Console.WriteLine(dictionary["Anahtar1"]);//parametreli prop nasıl kullanılır : )
+            Console.WriteLine(dictionary["Anahtar2"]);
+            Console.WriteLine(dictionary[10]);
+            Console.WriteLine(dictionary[30]);
 
         }
 
